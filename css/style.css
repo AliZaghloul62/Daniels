@@ -1,0 +1,352 @@
+html{
+    scroll-padding-top: 72px;
+}
+
+body{
+    font-family: "poppins", sans serif ;
+}
+
+h1,h2,h3,h4,h5,h6,.logo{
+    font-family: "Montserrat", sans serif;
+}
+
+#navbar-example .nav-item .nav-link::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 10px;
+    left:0%;
+    transition: .5s ease;
+}
+
+#navbar-example .nav-item .nav-link.active::before{
+    width: 100%;
+}
+
+.title-page{
+    background-image: url(../images/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+ul{
+    list-style: none;
+}
+
+.title-page h5{
+    font-size: 50px!important;
+    font-weight: 900!important;
+}
+
+.title-page h1{
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.title-page h1 span{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.title-page .fa-circle{
+    color: rgb(0, 0, 0);
+    opacity: 25%;
+}
+
+.about .about-img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+    left: 0;
+    bottom: -30px;
+}
+
+.subtitle{
+    letter-spacing:2px;
+    font-size: 14px;
+}
+
+.progress-bar{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.btn-dark{
+    transition: .5s ease-in-out;
+}
+
+.btn-dark:hover{
+    background-color: white;
+    color: #212529;
+}
+
+.btn-white{
+    transition: .5s ease-in-out;
+    border: #212529 1px solid;
+}
+
+.btn-white:hover{
+    background-color:#212529 ;
+    color: rgb(255, 255, 255);
+    
+}
+
+section.services{
+    background-color: #f7f7f7;
+}
+
+h2.section-title{
+    font-weight: 900;
+    z-index: 1;
+}
+
+h2.section-title::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+    
+}
+
+.ico-circle {
+    background-color: #f7f7f7;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.services .inner:hover .ico-circle{
+    background-color: #000000;
+    color: white;
+}
+
+a{
+    color: #000000!important;
+}
+
+.portofolio .active{
+    background-color: white !important;
+}
+
+.tab-pane{
+    width: 80%;
+}
+
+.port-item .overlay {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    bottom: -15px;
+    right: 5px;
+    gap: 25px;
+    transition: .5s ease;
+}
+
+.port-item:hover .overlay {
+    background-color: rgba(255, 255, 255, .95);
+    bottom: 5px;
+    top: 5px;
+    gap: 10px;
+}
+
+.port-item .icons,.port-item h6{
+    transition: .5s ease;
+}
+
+.port-item:hover h6{
+    opacity: 1!important;
+    padding-top:20px !important ;
+}
+
+.port-item:hover .icons{
+    opacity: 1!important;
+}
+
+.icons .icon{
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.icons .icon:hover{
+    background-color: rgba(0, 0, 0,0);
+    color: #000000 !important;
+}
+
+.icons .icon:hover i{
+    color: #000000 !important;
+}
+
+.portofolio .nav-pills .nav-link::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 8px;
+    left:0%;
+    transition: .5s ease;
+}
+
+.portofolio .nav-pills .nav-link.active::before{
+    width: 100%;
+}
+
+.feed-back{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.carousel-item img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform:translate(-50%,0)
+}
+
+#carouselExampleAutoplaying  button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#carouselExampleAutoplaying  button:hover{
+    background-color: #5e5c5c;
+
+}
+
+.feed-back{
+    background-color: #f7f7f7;
+}
+
+.counter .icon-circle{
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.team{
+    background-color: #f7f7f7;
+}
+
+.card-item .card-img .overlay {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    transition: .5s ease;
+}
+
+.card-item:hover .overlay {
+    background-color: rgba(255, 255, 255, .95);
+    transform: scale(1.95) rotateY(180deg);
+}
+
+.card-item .icons{
+    transition: .5s ease;
+}
+
+.card-item img{
+    transition: .5s ease;
+}
+
+.card-item:hover .icons{
+    opacity: 1!important;
+}
+
+.team .icons .icon{
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons .icon:hover{
+    background-color: rgba(0, 0, 0,0);
+    color: #000000 !important;
+}
+
+.icons .icon:hover i{
+    color: #000000 !important;
+}
+
+.card-img:hover img{
+    transform:scale(1.2);
+}
+
+.contact .icon{
+    width: 70px;
+    height: 70px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.contact .icon i{
+    transition: .5s ease;
+}
+
+.contact .col-md-4:hover i{
+color: white;
+}
+
+.contact .col-md-4:hover .icon{
+    background-color: #000000;
+}
+
+.contact .form-control{
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: none;
+}
+
+.contact form button{
+    background: #000000;
+    border: 0;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.contact form button:hover{
+    color: #000000;
+    background-color:hsla(0, 0%, 0%, 0);
+    box-shadow: 0 0 0 1px #000000;
+
+}
